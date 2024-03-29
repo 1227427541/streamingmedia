@@ -259,8 +259,6 @@ dd{
     display: inline;
     margin: 0; 
 }
-
-/* Hover */
 #head-h1:hover{
     color: #590242;
 }
