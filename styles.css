@@ -65,23 +65,23 @@ header {
 header section {
     color: #ffffff;
     background: linear-gradient(#2104D9, #020659, #000000);
-    padding: 5px 0 20px;
+    padding: 0.35em 0 1.2em;
 }
 
 header h1 {
     text-transform: uppercase;
-    padding: 5px 0 20px;
+    padding: 0.35em 1.5em;
 }
 
 header p {
-    padding: 5px 30px;
+    padding: 0.35em 1.75em;
 }
 
 nav {
     background-color: #030a8c;
     display: flex;
     flex-direction: row;
-    padding: 0 0 20px;
+    padding: 0 0 1.5rem;
 }
 
 nav img {
@@ -96,23 +96,25 @@ nav a {
     text-decoration: none;
     display: block;
     height: 42px;
-    padding: 20px;
+    padding: 1.2rem;
     color: #ffffff;
 }
 
 nav a:hover {
     background-color: #590242;
+    display: block;
+    overflow: hidden;
 }
 
 ul, li {
     text-transform: uppercase;
 }
 
-#home {
+ul li:first-of-type {
+    font-variant: small-caps;
     font-weight: bold;
     font-size: 1.5em;
     position: relative;
-    font-variant: small-caps;
 }
 
 header, nav, main, footer {
@@ -125,17 +127,21 @@ header, nav, main, footer {
 h1 {
     font-weight: bold;
     font-size: 1.25em;
-    padding: 15px 0px 0px 0px;
+    padding: .5rem;
 }
 
 h2, h3 {
     font-weight: bold;
-    font-size: 1.25em;
-    text-transform: uppercase;
+    font-size: 1em;
+    padding: 0 .5rem;
 }
 
 h2 {
     color: #590242;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 1.75rem;
+    padding-bottom: .25rem;
 }
 
 h3 {
@@ -144,6 +150,7 @@ h3 {
 
 p, dt, dd {
     font-size: 1em;
+    padding: .2rem;
 }
 
 main, footer {
@@ -174,7 +181,7 @@ audio {
 }
 
 #trending {
-    padding: 20px 0;
+    padding: 1.25rem 0;
 }
 
 #trending h2 {
@@ -224,7 +231,7 @@ audio {
 }
 
 #playlists {
-    padding: 10px 0;
+    padding: 1rem 0;
 }
 
 #playlists div, #curated div {
@@ -242,7 +249,7 @@ audio {
 }
 
 #playlists .scroll, #curated .scroll {
-    margin: 0 0 5px;
+    margin: 0 0 .5rem;
 }
 
 #curated .scroll {
@@ -265,6 +272,11 @@ audio {
 
 #playlists .scroll section:hover {
     background-color: #590242;
+}
+
+footer {
+    color: #590242;
+    text-align: center;
 }
 
 audio::-webkit-media-controls-mute-button {
@@ -321,6 +333,7 @@ audio::-webkit-media-controls-enclosure {
 ul {
     overflow: hidden;
     max-height: 0;
+    padding: 0 0 1rem;
     transition: max-height .2s ease-out;
 }
 
@@ -330,6 +343,7 @@ label {
     padding: 28px 20px;
     position: relative;
     user-select: none;
+    z-index: 1;
 }
 
 label span {
@@ -343,7 +357,6 @@ label span {
 
 label span:before, label span:after {
     background: #ffffff;
-    content: '';
     display: block;
     height: 100%;
     position: absolute;
@@ -408,7 +421,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     }
 
     nav {
-        padding: 0 0 20px;
+        padding: 0 0 1.45rem;
     } 
 
     #playlists .scroll, #curated .scroll {
@@ -430,25 +443,87 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     #curated .scroll section {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        padding: 5px;
+        padding: 0.5rem;
     }
 
-    #playlists .scroll{
+    #playlists .scroll {
         background-color: #2699fb;
     }
 
-    #playlists .scroll section{
+    #playlists .scroll section {
         background-color: #0d8dfb;
     }
 
-    #lists{
+    #lists {
         display:grid;
         grid-template-columns: 1fr 1fr;
         width: 834px;
     } 
 
-    .more{
+    .more {
         float: right;
         margin-right: 15px;
+    }
+
+    nav a:nth-of-type(5) {
+        padding: 0 1.2rem;
+    }
+}
+    
+
+ @media screen and (max-width:834px) {
+     ul{
+        padding: 0 0 1rem;
+        height: 365px;
+    }
+    
+    ul li:first-of-type {
+        font-variant: small-caps;
+        font-weight: bold;
+        position: absolute;
+        z-index: 2;
+    }
+    
+    ul li:nth-of-type(2), ul li:nth-of-type(3), ul li:nth-of-type(4), ul li:nth-of-type(5){
+        position: relative;
+        top: 70px;
+    }
+    
+    nav a img {
+        position: relative;
+    }
+    
+    .scroll{
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    
+    #playlists{
+        padding: 0 0 .75rem;
+    }
+    
+     #curated{
+        padding: .5rem 0 0;
+    }
+        
+    #playlists .scroll, #curated .scroll{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 15px;
+        padding: 1rem;
+     }
+    
+    #playlists dl, #playlists img{
+        display: flex;
+        flex-direction: column;
+    }
+    
+     .scroll p{
+        padding: 2px 0 5px;
+    }
+    
+    #playlists section, #curated section{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
     }
 }
