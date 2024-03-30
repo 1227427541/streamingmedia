@@ -64,6 +64,64 @@ body {
 }
 
 header {
-    background: linear-gradient(90deg, #2104d9, #020659);
+    background: linear-gradient(90deg, #2104d9, #000000);
     padding: 20px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 1.25em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#home {
+    text-transform: uppercase;
+    font-variant-caps: small-caps;
+    font-weight: bold;
+}
+
+
+#trending ::-webkit-scrollbar {
+
+}
+
+#trending ::-webkit-scrollbar-track {
+
+}
+
+#trending ::-webkit-scrollbar-thumb {
+
+}
+
+#trending ::-webkit-scrollbar-thumb:hover {
+
+}
+
+#playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
+
+}
+
+#playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
+
+}
+
+#playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
+
+}
+
+#playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
+
+}
+
+audio::-webkit-media-controls-mute-button {
+
+}
+
+audio::-webkit-media-controls-play-button {
+
+}
+
+audio::-webkit-media-controls-enclosure {
+
 }
