@@ -70,8 +70,8 @@ header {
     margin: 0 auto;
     color:#ffffff;
     text-align: center;
-    display: flex;
     align-items: center;
+    position: absolute;
     clear: both;
 }
 
@@ -80,8 +80,10 @@ nav {
     background-color: #030abc;
     align-items: center;
     text-align: center;
-    position: fixed;
-    justify-content: space-evenly;
+    position: absolute;
+    width: 100%;
+    margin: 0px;
+    padding: 0%;
 }
 
 nav ul {
@@ -176,6 +178,12 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 }
 
 @media screen and (min-width:834px) {
+    
+    body {
+        width: 824px;
+    }
+    
+    
     ul {
         overflow: visible;
         position: absolute;
