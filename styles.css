@@ -61,23 +61,26 @@ body {
     margin: 0 auto;
     background-color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 834px;
 }
 
 header {
     background: linear-gradient(90deg, #2104d9, #000000);
-    padding: 10px;
+    padding: 20px;
     margin: 0 auto;
     color:#ffffff;
     text-align: center;
     display: flex;
     align-items: center;
+    clear: both;
 }
 
 nav {
     color: #ffffff;
+    background-color: #030abc;
     align-items: center;
     text-align: center;
-    display: flex;
+    position: fixed;
     justify-content: space-evenly;
 }
 
@@ -85,6 +88,37 @@ nav ul {
     display: flex;
     list-style: none;
     padding: 0;
+}
+
+nav li{
+  
+}
+
+nav h2 {
+    display: none;
+}
+
+h1 {
+    font-family: verdana;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+
+#home {
+    text-transform: uppercase;
+    font-variant-caps: small-caps;
+    font-weight: bold;
 }
 
 ul {
@@ -157,22 +191,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 
 
 
-h1 {
-    font-family: verdana;
-    font-size: 1.25em;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #ffffff;
-    padding: 20px;
-}
 
-
-
-#home {
-    text-transform: uppercase;
-    font-variant-caps: small-caps;
-    font-weight: bold;
-}
 
 
 
