@@ -469,7 +469,6 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         padding: 0 1.2rem;
     }
 }
-    
 
  @media screen and (max-width:834px) {
      ul{
@@ -484,7 +483,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         z-index: 2;
     }
     
-    ul li:nth-of-type(2), ul li:nth-of-type(3), ul li:nth-of-type(4), ul li:nth-of-type(5){
+    ul li:nth-of-type(2), ul li:nth-of-type(3), ul li:nth-of-type(4), ul li:nth-of-type(5) {
         position: relative;
         top: 70px;
     }
@@ -493,36 +492,36 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         position: relative;
     }
     
-    .scroll{
+    .scroll {
         overflow-x: auto;
         overflow-y: hidden;
     }
     
-    #playlists{
+    #playlists {
         padding: 0 0 .75rem;
     }
     
-     #curated{
+     #curated {
         padding: .5rem 0 0;
     }
         
-    #playlists .scroll, #curated .scroll{
+    #playlists .scroll, #curated .scroll {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         column-gap: 15px;
         padding: 1rem;
      }
     
-    #playlists dl, #playlists img{
+    #playlists dl, #playlists img {
         display: flex;
         flex-direction: column;
     }
     
-     .scroll p{
+     .scroll p {
         padding: 2px 0 5px;
     }
     
-    #playlists section, #curated section{
+    #playlists section, #curated section { 
         display: grid;
         grid-template-rows: 1fr 1fr;
     }
