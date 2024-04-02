@@ -57,6 +57,12 @@ html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body {
+    width: 375px;
+    margin: 0 auto; 
+    background-color: #ffffff;
+}
+
 header {
     display: flex;
     flex-direction: column-reverse;
@@ -65,23 +71,23 @@ header {
 header section {
     color: #ffffff;
     background: linear-gradient(#2104D9, #020659, #000000);
-    padding: 0.35em 0 1.2em;
+    padding: 5px 0 20px;
 }
 
 header h1 {
     text-transform: uppercase;
-    padding: 0.35em 1.5em;
+    padding: 5px 25px;
 }
 
 header p {
-    padding: 0.35em 1.75em;
+    padding: 5px 30px;
 }
 
 nav {
     background-color: #030a8c;
     display: flex;
     flex-direction: row;
-    padding: 0 0 1.5rem;
+    padding: 0 0 20px;
 }
 
 nav img {
@@ -96,7 +102,7 @@ nav a {
     text-decoration: none;
     display: block;
     height: 42px;
-    padding: 1.2rem;
+    padding: 15px;
     color: #ffffff;
 }
 
@@ -113,7 +119,7 @@ ul, li {
 ul li:first-of-type {
     font-variant: small-caps;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 25px;
     position: relative;
 }
 
@@ -121,27 +127,27 @@ header, nav, main, footer {
     margin: 0px auto;
     align-content: center;
     width: 375px;
-    line-height: 2em;
+    line-height: 30px;
 }
 
 h1 {
     font-weight: bold;
-    font-size: 1.25em;
-    padding: .5rem;
+    font-size: 20px;
+    padding: 5px;
 }
 
 h2, h3 {
     font-weight: bold;
     font-size: 1em;
-    padding: 0 .5rem;
+    padding: 0 5px;
 }
 
 h2 {
     color: #590242;
     text-transform: uppercase;
     font-weight: bold;
-    padding-left: 1.75rem;
-    padding-bottom: .25rem;
+    padding-left: 30px;
+    padding-bottom: 5px;
 }
 
 h3 {
@@ -150,7 +156,7 @@ h3 {
 
 p, dt, dd {
     font-size: 1em;
-    padding: .2rem;
+    padding: 3px;
 }
 
 main, footer {
@@ -181,7 +187,7 @@ audio {
 }
 
 #trending {
-    padding: 1.25rem 0;
+    padding: 20px 0;
 }
 
 #trending h2 {
@@ -231,7 +237,7 @@ audio {
 }
 
 #playlists {
-    padding: 1rem 0;
+    padding: 15px 0;
 }
 
 #playlists div, #curated div {
@@ -249,7 +255,7 @@ audio {
 }
 
 #playlists .scroll, #curated .scroll {
-    margin: 0 0 .5rem;
+    margin: 0 0 5px;
 }
 
 #curated .scroll {
@@ -333,7 +339,7 @@ audio::-webkit-media-controls-enclosure {
 ul {
     overflow: hidden;
     max-height: 0;
-    padding: 0 0 1rem;
+    padding: 0 0 10px;
     transition: max-height .2s ease-out;
 }
 
@@ -398,11 +404,6 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 
 @media screen and (min-width:834px) {
    
-    header, nav, main, footer{
-        margin: 0 auto;
-        align-content: center;
-        width: 834px;
-    }
    
     ul {
         overflow: visible;
@@ -420,8 +421,14 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         display: none;
     }
 
+    header, nav, main, footer{
+        margin: 0 auto;
+        align-content: center;
+        width: 834px;
+    }
+
     nav {
-        padding: 0 0 1.45rem;
+        padding: 0 0 20px;
     } 
 
     #playlists .scroll, #curated .scroll {
@@ -443,7 +450,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     #curated .scroll section {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        padding: 0.5rem;
+        padding: 5px;
     }
 
     #playlists .scroll {
@@ -465,14 +472,14 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         margin-right: 15px;
     }
 
-    nav a:nth-of-type(5) {
-        padding: 0 1.2rem;
+    nav a:last-of-type {
+        padding: 0 10px;
     }
 }
 
  @media screen and (max-width:834px) {
      ul{
-        padding: 0 0 1rem;
+        padding: 0 0 15px;
         height: 365px;
     }
     
@@ -483,7 +490,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         z-index: 2;
     }
     
-    ul li:nth-of-type(2), ul li:nth-of-type(3), ul li:nth-of-type(4), ul li:nth-of-type(5) {
+    ul #trending, #playlist, #curated {
         position: relative;
         top: 70px;
     }
@@ -498,18 +505,18 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     }
     
     #playlists {
-        padding: 0 0 .75rem;
+        padding: 0 0 10px;
     }
     
      #curated {
-        padding: .5rem 0 0;
+        padding: 5px 0 0;
     }
         
     #playlists .scroll, #curated .scroll {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         column-gap: 15px;
-        padding: 1rem;
+        padding: 15px;
      }
     
     #playlists dl, #playlists img {
