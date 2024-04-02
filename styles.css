@@ -472,9 +472,6 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         margin-right: 15px;
     }
 
-    nav a:last-of-type {
-        padding: 0 10px;
-    }
 }
 
  @media screen and (max-width:834px) {
@@ -483,7 +480,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         height: 365px;
     }
     
-    ul li:first-of-type {
+    ul #home {
         font-variant: small-caps;
         font-weight: bold;
         position: absolute;
